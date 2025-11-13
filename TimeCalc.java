@@ -3,8 +3,8 @@ public class TimeCalc {
         // Replace this comment with your code
         String time = args [0];
         int minutesToAdd = Integer.parseInt (args[1]) ; 
-        int hours = Integer.parseInt(time.substring(0, 1));
-        int minutes = Integer.parseInt(time.substring(3, 4));
+        int hours = Integer.parseInt(time.substring(0, 2));
+        int minutes = Integer.parseInt(time.substring(3, 5));
         int TotalMinutes = ((hours * 60) + minutes + minutesToAdd); 
         int TotalHours = (TotalMinutes / 60); 
         int NewHours = (TotalHours % 24); 
