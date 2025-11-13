@@ -11,7 +11,7 @@ public class Collatz {
                 System.out.print(seed + " ");  
             }
 
-			while (num != 1) { 
+			do { 
 				if (num % 2 == 0) {
                     num = num / 2;
                    } else {
@@ -22,7 +22,7 @@ public class Collatz {
                     System.out.print(num + " ");
                 }
 				 
-            }
+            } while (num != 1);
 			 if (mode.equals("v")) {
                 System.out.println("(" + steps + ")");
 			}
